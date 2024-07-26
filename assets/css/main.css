@@ -4406,3 +4406,7 @@ ul.actions {
 .full-width-image:hover img {
 	transform: scale(1.05);
 }
+
+html {
+    scroll-behavior: smooth;
+}
