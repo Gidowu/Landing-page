@@ -4273,3 +4273,84 @@ ul.actions {
 .actions .button:hover {
 	background: #0056b3;
 }
+
+
+/* main.css */
+
+/* Research Section Styles */
+#research {
+	padding: 4rem 1.5rem;
+}
+
+#research .inner {
+	text-align: center;
+}
+
+#research h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+#research p {
+	font-size: 1.125rem;
+	color: #666;
+	margin-bottom: 2rem;
+}
+
+/* Full Width Image Section Styles */
+.full-width-image {
+	position: relative;
+	overflow: hidden;
+	margin-top: 2rem;
+}
+
+.full-width-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.full-width-image:hover img {
+	transform: scale(1.1);
+}
+
+/* Contact Information Styles */
+.contact {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.contact li {
+	margin-bottom: 1rem;
+}
+
+.contact h3 {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+	color: #333;
+}
+
+.contact a,
+.contact span {
+	font-size: 1rem;
+	color: #666;
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.icons .icon {
+	font-size: 1.5rem;
+	color: #007bff;
+}
+
+.icons .icon:hover {
+	color: #0056b3;
+}
