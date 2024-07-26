@@ -4043,30 +4043,33 @@ body.is-preload #sidebar nav ul li {
 	padding: 5rem 1.5rem;
 }
 
-#intro .inner {
-	position: relative;
-	z-index: 1;
-}
-
 /* Profile Picture Styles */
 .profile-picture {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
+	position: relative;
+	z-index: 1;
+	/* Ensure the profile picture appears above the background */
 }
 
 .profile-picture img {
 	width: 150px;
+	/* Adjust size as needed */
 	height: 150px;
 	border-radius: 50%;
+	/* Makes the image circular */
 	object-fit: cover;
 	border: 3px solid #fff;
+	/* Optional border around the image */
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	/* Optional shadow for better visibility */
 	transition: transform 0.3s ease;
 }
 
 .profile-picture img:hover {
 	transform: scale(1.1);
+	/* Scale up the image on hover */
 }
 
 /* Button Styles */
@@ -4091,6 +4094,7 @@ body.is-preload #sidebar nav ul li {
 	height: 100%;
 	background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5));
 	z-index: 0;
+	/* Ensure it is below the content */
 	opacity: 0.5;
 	animation: backgroundAnimation 15s ease-in-out infinite;
 }
