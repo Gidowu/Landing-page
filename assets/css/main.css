@@ -4410,3 +4410,53 @@ ul.actions {
 html {
     scroll-behavior: smooth;
 }
+
+/* Ensure the text is readable and styled attractively */
+.intro-text h1 {
+    font-size: 3em; /* Adjust as needed */
+    color: #fff; /* White color for contrast */
+    margin-bottom: 0.5em;
+}
+
+.intro-text h2 {
+    font-size: 2em; /* Adjust as needed */
+    color: #ffd700; /* Gold color for emphasis */
+    margin-bottom: 1em;
+}
+
+.intro-text p {
+    font-size: 1.2em; /* Adjust as needed */
+    color: #fff; /* White color for contrast */
+    margin-bottom: 2em;
+}
+
+.intro-text .button {
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 0.75em 1.5em; /* Button padding */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.intro-text .button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+.button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.button:hover {
+	background-color: #0056b3;
+}
+section {
+	padding: 50px;
+	margin: 20px 0;
+}
