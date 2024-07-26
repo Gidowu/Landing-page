@@ -4036,79 +4036,90 @@ body.is-preload #sidebar nav ul li {
 
 /* Intro Section Styles */
 #intro {
-	position: relative;
-	overflow: hidden;
-	color: #fff;
-	text-align: center;
-	padding: 5rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    color: violet;
+    text-align: center;
+    padding: 5rem 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5));
+    background-size: 200% 200%;
+    transition: background 0.5s ease, transform 0.5s ease;
 }
 
-/* Profile Picture Styles */
-.profile-picture {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
-	position: relative;
-	z-index: 1;
-	/* Ensure the profile picture appears above the background */
+#intro:hover {
+    background: linear-gradient(225deg, rgba(0, 204, 255, 0.5), rgba(255, 0, 150, 0.5));
+    background-size: 200% 200%;
+    transform: scale(1.02);
 }
 
-.profile-picture img {
-	width: 150px;
-	/* Adjust size as needed */
-	height: 150px;
-	border-radius: 50%;
-	/* Makes the image circular */
-	object-fit: cover;
-	border: 3px solid #fff;
-	/* Optional border around the image */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	/* Optional shadow for better visibility */
-	transition: transform 0.3s ease;
-}
-
-.profile-picture img:hover {
-	transform: scale(1.1);
-	/* Scale up the image on hover */
-}
-
-/* Button Styles */
-.actions .button {
-	background: #f76c6c;
-	/* Example color */
-	color: #fff;
-	transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.actions .button:hover {
-	background: #ff6f61;
-	transform: translateY(-5px);
-}
-
-/* Animated Background Styles */
+/* Animated Background Overlay Styles */
 .background-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5));
-	z-index: 0;
-	/* Ensure it is below the content */
-	opacity: 0.5;
-	animation: backgroundAnimation 15s ease-in-out infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.4), rgba(0, 204, 255, 0.4));
+    z-index: 0; /* Ensure it is below the content */
+    opacity: 0.6;
+    animation: backgroundAnimation 15s ease-in-out infinite;
 }
 
 @keyframes backgroundAnimation {
-	0% {
-		background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5));
-	}
+    0% {
+        background: linear-gradient(135deg, rgba(255, 0, 150, 0.4), rgba(0, 204, 255, 0.4));
+    }
+    50% {
+        background: linear-gradient(225deg, rgba(0, 204, 255, 0.4), rgba(255, 0, 150, 0.4));
+    }
+    100% {
+        background: linear-gradient(135deg, rgba(255, 0, 150, 0.4), rgba(0, 204, 255, 0.4));
+    }
+}
 
-	50% {
-		background: linear-gradient(225deg, rgba(0, 204, 255, 0.5), rgba(255, 0, 150, 0.5));
-	}
+/* Content Styling */
+.inner {
+    position: relative;
+    z-index: 1; /* Ensure content appears above the background */
+}
 
-	100% {
-		background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5));
-	}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in 0.5s; /* Delayed fade-in for paragraphs */
+}
+
+ul.actions {
+    margin-top: 20px;
+}
+
+.button {
+    background: #f76c6c; /* Example color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background: #ff6f61;
+    transform: translateY(-5px);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
